@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  /* background-color: #f1f1f1; */
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+button,
+input {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  width: 1312px;
+  display: block;
+  margin: 0 auto;
+}
+
+.dedicated {
+  background: #d8bf95;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  padding: 11px;
+}
+
+/* SECTION */
+.section__title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+/* HEADER */
+.header {
+  width: 100%;
+}
+
+.header__inner {
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__link {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 17.5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.header__sign--block {
+  display: flex;
+  align-items: center;
+}
+
+.header__sign--link {
+  margin-right: 27px;
+}
+
+.language {
+  margin-right: 71px;
+}
+
+.language button {
+  font-size: 14px;
+  line-height: 17.5px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.language button:first-child {
+  color: #c4c4c4;
+  border-right: 2px solid #000;
+}
+
+/* HOME */
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__img {
+  width: 33.33%;
+  height: 630px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+  position: relative;
+
+  overflow: hidden;
+}
+
+.home__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: 0.5s;
+}
+
+.home__img:hover img {
+  transform: scale(1.2) rotate(9deg);
+  opacity: 0.6;
+}
+
+.home__img:hover .home__img--title {
+  opacity: 1;
+}
+
+.home__img--title {
+  position: relative;
+  bottom: 40px;
+  left: 30px;
+  font-size: 14px;
+  line-height: 17.5px;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+/* TEXT SECTION */
+.text__section {
+  padding: 115px 0;
+}
+.text__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.text__block a {
+  font-size: 18px;
+  line-height: 22px;
+}
+.text__block--description {
+  width: 65%;
+}
+.text__block--description h1 {
+  font-size: 64px;
+  line-height: 64px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.text__block--description p {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+/* SHOP NEW ARRIVALS  */
+.shop__section {
+  padding: 40px 0 83px;
+
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+}
+
+.cart__item {
+  width: 350px;
+  min-height: 520px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px 0 0;
+
+  flex: 1 0 auto;
+
+  border: 1px solid #f1f1f1;
+}
+
+.cart__item--browse {
+  position: relative;
+  border: none;
+}
+.cart__item--browse p {
+  position: absolute;
+  bottom: 75px;
+  left: 30px;
+  color: #fff;
+  font-size: 33px;
+  line-height: 42px;
+}
+
+.cart__item--img {
+  width: 100%;
+  height: 450px;
+}
+
+.cart__item--img img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.cart__item--sub {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  margin: 15px 0;
+}
+.cart__item--sub p,
+.cart__item--sub button {
+  font-size: 14px;
+  line-height: 17.5px;
+}
+.cart__item--description {
+  font-size: 16px;
+  line-height: 21.6px;
+  padding: 0 15px;
+  visibility: hidden;
+  opacity: 0;
+  /* color: #747474; */
+  margin-bottom: 20px;
+
+  transition: 0.2s;
+}
+
+.cart__item:hover .cart__item--description {
+  visibility: visible;
+  opacity: 0.5;
+}
+
+/* COLLECTIONS */
+.collections {
+  width: 100%;
+  display: flex;
+}
+
+.collections__img {
+  width: 50%;
+  position: relative;
+}
+
+.collections__img img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.collections__img h2 {
+  position: absolute;
+  font-size: 44px;
+  line-height: 60px;
+  top: 50px;
+  left: 50px;
+}
+
+.collections__img p {
+  position: absolute;
+  font-size: 14px;
+  line-height: 17.5px;
+  bottom: 65px;
+  left: 50px;
+}
