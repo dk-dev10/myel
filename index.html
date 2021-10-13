@@ -15,10 +15,17 @@
     <div class="header">
       <div class="container">
         <div class="header__inner">
-          <a href="#" class="header__link">Shop by</a>
-          <a href="#" class="header__link">Colections</a>
-          <img src="./assets/img/logo.png" draggable="true" alt="logotype" />
-          <a href="#" class="header__link">About us</a>
+          <div><a href="#" class="header__link">Shop by</a></div>
+          <div><a href="#" class="header__link">Colections</a></div>
+          <div>
+            <a href="#"
+              ><img
+                src="./assets/icon/logo.svg"
+                draggable="true"
+                alt="logotype"
+            /></a>
+          </div>
+          <div><a href="#" class="header__link">About us</a></div>
           <div class="header__sign--block">
             <a href="#" class="header__link header__sign--link">Login</a>
             <div class="language"><button>Fr</button><button>En</button></div>
@@ -67,7 +74,10 @@
     <div class="shop__section">
       <div class="container">
         <div class="shop__block">
-          <h2 class="section__title">SHOP NEW ARRIVALS</h2>
+          <div class="shop__block--header">
+            <h2 class="section__title">SHOP NEW ARRIVALS</h2>
+            <div class="slider__btns"></div>
+          </div>
           <div class="slider">
             <div class="cart__item">
               <div class="cart__item--img">
@@ -176,7 +186,7 @@
               <p>Rings</p>
             </div>
             <div class="cart__item cart__item--browse">
-              <div class="cart__item--img">
+              <div class="cart__item--img cart__item--img-browse">
                 <img src="./assets/img/browse_2.png" alt="browse_2" />
               </div>
 
@@ -194,13 +204,142 @@
     </div>
 
     <!-- TWO BIG PHOTOS -->
+    <div class="collections">
+      <div class="collections__img">
+        <img src="./assets/img/book_1.png" alt="book_1" />
+      </div>
+      <div class="collections__img">
+        <img src="./assets/img/book_2.png" alt="book_2" />
+      </div>
+    </div>
 
     <!-- TOGETHER -->
+    <div class="together">
+      <div class="container">
+        <div class="together__title">
+          <p>
+            Together, we can build a brighter tomorrow. We use ethical stones
+            and the most eco-responsible raw material possible.
+          </p>
+        </div>
+        <div class="together__cards">
+          <div class="together__cards--item">
+            <img src="./assets/img/illustr_1.png" alt="illustr_1" />
+            <h3 class="together__cards--item-count">01</h3>
+            <p class="together__cards--item-descrp">
+              Our jewelry is designed and produced locally in Montreal.
+            </p>
+          </div>
+          <div class="together__cards--item">
+            <img src="./assets/img/illustr_2.png" alt="illustr_2" />
+            <h3 class="together__cards--item-count">02</h3>
+            <p class="together__cards--item-descrp">
+              MYEL is a member of the Ethical Metalsmith Association.
+            </p>
+          </div>
+          <div class="together__cards--item">
+            <img src="./assets/img/illustr_3.png" alt="illustr_3" />
+            <h3 class="together__cards--item-count">03</h3>
+            <p class="together__cards--item-descrp">
+              We create high end jewelry, designed to stand the test of time.
+            </p>
+          </div>
+        </div>
+        <button class="btn__text">Learn More</button>
+      </div>
+    </div>
 
     <!-- TWO BIG PHOTOS -->
-
+    <div class="collections">
+      <div class="collections__img">
+        <img src="./assets/img/kolechko_1.png" alt="kolechko_1" />
+      </div>
+      <div class="collections__img">
+        <h2>Fairmined Gold: choose ethical gold</h2>
+        <p>Shop Fairmined Gold</p>
+        <img src="./assets/img/kolechko_2.png" alt="kolechko_2" />
+      </div>
+    </div>
     <!-- EMAIL -->
+    <div class="email">
+      <div class="container">
+        <div class="email__inner">
+          <div class="email__inner--header">
+            <p>Exceptional Quality</p>
+            <p>Fair Price</p>
+            <p>Made in Montreal</p>
+          </div>
+          <div class="email__inner--form">
+            <p class="email__form--title">
+              Subscribe to <br />
+              our newsletter.
+            </p>
+            <p class="email__form--promo">
+              Receive exclusive news and special promo codes.
+            </p>
+            <div class="email__form--input">
+              <input type="email" name="email" />
+              <button>
+                <img src="./assets/icon/arrow-right.svg" alt="arrow-right" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- FOOTER -->
+    <div class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <!-- BLOCK -->
+          <div class="footer__block">
+            <div class="footer__block--item">
+              <h3 class="footer__block--item-title">Shop By</h3>
+              <ul class="footer__block--item-list clm2">
+                <li><a href="#">Necklaces</a></li>
+                <li><a href="#">Earrings</a></li>
+                <li><a href="#">Best Sellers</a></li>
+                <li><a href="#">Rings</a></li>
+                <li><a href="#">Bracelets</a></li>
+                <li><a href="#">New Arrivals</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- BLOCK -->
+          <div class="footer__block">
+            <div class="footer__block--item">
+              <h3 class="footer__block--item-title">Support</h3>
+              <ul class="footer__block--item-list">
+                <li><a href="#">Product care</a></li>
+                <li><a href="#">Returns, shipping & pricing</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <!-- ITEM -->
+            <div class="footer__block--item">
+              <h3 class="footer__block--item-title">MYEL</h3>
+              <ul class="footer__block--item-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">Ethical stones</a></li>
+                <li><a href="#">Terms & privacy</a></li>
+              </ul>
+            </div>
+            <!-- ITEM -->
+            <div class="footer__block--item">
+              <h3 class="footer__block--item-title">Visit</h3>
+              <ul class="footer__block--item-list">
+                <li><a href="#">The Store</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">All rights reserved. © 2021 - MYEL</p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
